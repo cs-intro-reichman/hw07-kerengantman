@@ -10,7 +10,7 @@ public class IsSorted {
         if (a.length <= 1 || i == a.length - 1) {
             return true;
         }
-        if (a[i] >= a[i + 1]) {
+        if (a[i] > a[i + 1]) {
             return false;
         }
         return isSorted(a, i + 1);
